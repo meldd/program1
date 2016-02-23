@@ -1,0 +1,22 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Melanie DeSantis\
+Report - Program 1\
+22 February 2016\
+CSC 201\
+\
+The objectives of this program were to produce output that created shapes by performing operations on a string character - that is string concatenation.  The parts of the entire program move along by requiring increasing restrictions on what the output should look like.  The half pyramid was a fairly simple concatenation, requiring just one for loop to succeed.  The full pyramid - which must be symmetrical gets a little more tricky because you cannot concatenate the outputs of two for-loops side by side - apparently. Thus, two different methods of cycling through a set of values are used - the range function, and an algebra function that replaces the variable as it goes through the first range in the for loop.  The parabola uses the same logic, but goes yet one step further by performing a graphic equation on the input data. (y = (x**2)/4 ) rather than just simple algebraic functions.  This required nested for loops that print the negative and positive sloping sides of the parabola with the correct amount of spaces also sloping  inwards and out.  Whereas in the full pyramid only one variable was needed to delineate the output of spaces, here two variables were required identified as - spaces and spacenum. \
+\
+\
+1.  Yes, the program still works if you enter more than one character as a building block.  That string will be saved as the variable and output as if it is one \'93building block.\'94\
+\
+2. Yes, the program still runs if more than one character is input. While it still works, the output pyramid will not be symmetrical as required.  To \'93fix\'94 this problem, you would have to limit what the user can input into the program. For example, it should return an error and reprompt the user if they enter \'93***\'94 as the building block rather than \'93*\'94.\
+\
+3.  One major problem I had when completing the assignment was looping through two loops. This meant, for example, producing the pyramid output not only as a pyramid with 5 levels, but as five pyramids of five levels.  Rather than using a for loop to print the spaces and the blocsk, just one loop was used.  The range in the for loop was used to repeat the number of spaces. And the function q=q+2 was used to repeat the number of blocks, with q rehashing each time as the next value when it went through the loop for spaces.\
+\
+The i that cycles through the given range (start, finish, step) in the pyramids and parabola is a local variable - representing the range of values in that loop.\
+the levels, block, and space are instance variables.}
